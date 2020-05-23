@@ -66,6 +66,7 @@
  newDeathsInIndia.classList.add('text-danger');
  newRecoveredInIndia.style.color = '#E74292';
 
+
  // fetch the covid19 api realtime Data and integrated to  myapplication
  let url = 'https://api.covid19api.com/summary';
 
@@ -89,9 +90,10 @@
      newRecoveredCountInIndia.innerText = data.Countries[76].NewRecovered;
      newDeathsCountInIndia.innerText = data.Countries[76].NewDeaths;
 
-     console.log(data);
-     console.log("*********************");
-     console.log(data.Countries[76]);
+     //  console.log(data);
+     //  console.log("*********************");
+     //  console.log(data.Countries[76]);
+
 
    })
    .catch(error => {
